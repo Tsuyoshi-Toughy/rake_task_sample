@@ -14,6 +14,7 @@ namespace :import_csv do
       begin
         User.transaction do
         User.create!(list)
+        end
         puts "インポート完了!!".green
       rescue StandardError => e
 
